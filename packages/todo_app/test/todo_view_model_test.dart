@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo_app/models/todo.dart';
-import 'package:todo_app/view_models/todoViewModel.dart';
+import 'package:todo_app/models/Todo.dart';
+import 'package:todo_app/view_models/TodoViewModel.dart';
 
 void main() {
   group('TodoViewModel Tests', () {

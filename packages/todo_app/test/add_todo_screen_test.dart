@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
-import 'package:todo_app/navigation/navigationService.dart';
-import 'package:todo_app/view_models/todoViewModel.dart';
-import 'package:todo_app/views/homeScreen.dart';
-import 'package:todo_app/views/addTodoScreen.dart';
+import 'package:todo_app/navigation/NavigationService.dart';
+import 'package:todo_app/view_models/TodoViewModel.dart';
+import 'package:todo_app/views/HomeScreen.dart';
+import 'package:todo_app/views/AddTodoScreen.dart';
 
 void main() {
   testWidgets('AddTodoScreen adds a new todo with proper navigation',

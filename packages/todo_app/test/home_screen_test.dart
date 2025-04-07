@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:todo_app/models/todo.dart';
-import 'package:todo_app/view_models/todoViewModel.dart';
-import 'package:todo_app/views/homeScreen.dart';
+import 'package:todo_app/models/Todo.dart';
+import 'package:todo_app/view_models/TodoViewModel.dart';
+import 'package:todo_app/views/HomeScreen.dart';
 
 void main() {
   testWidgets('HomeScreen displays todo items', (WidgetTester tester) async {

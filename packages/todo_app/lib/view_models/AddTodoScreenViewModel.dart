@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo_app/models/todo.dart';
-import 'package:todo_app/navigation/navigationService.dart';
-import 'package:todo_app/view_models/todoViewModel.dart';
+import 'package:todo_app/models/Todo.dart';
+import 'package:todo_app/navigation/NavigationService.dart';
+import 'package:todo_app/view_models/TodoViewModel.dart';
 
 class AddTodoScreenViewModel {
   final WidgetRef ref;
