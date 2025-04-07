@@ -13,11 +13,29 @@ A simple To-Do application built with Flutter that demonstrates the use of MVVM 
 
 ## Project Structure
 
- # onenz_test/ ├── melos.yaml
- # Melos configuration for the monorepo └── packages/ ├── ui_elements/ 
- # Shared UI components │ ├── pubspec.yaml │ └── lib/ │ ├── custom_button.dart │ ├── custom_bottom_button.dart │ ├── custom_text_field.dart │ └── CustomTitleText.dart └── todo_app/ 
- # Main application ├── pubspec.yaml └── lib/ ├── main.dart ├── models/ │ └── todo.dart ├── view_models/ │ └── todo_view_model.dart └── views/ ├── home_screen.dart └── add_todo_screen.dart
-
+```plaintext
+my_monorepo/
+├── melos.yaml            # Melos configuration for the monorepo
+└── packages/
+    ├── ui_elements/       # Shared UI components
+    │   ├── pubspec.yaml
+    │   └── lib/
+    │       ├── custom_button.dart
+    │       ├── custom_bottom_button.dart
+    │       ├── custom_text_field.dart
+    │       └── CustomTitleText.dart
+    └── todo_app/          # Main application
+        ├── pubspec.yaml
+        └── lib/
+            ├── main.dart
+            ├── models/
+            │     └── todo.dart
+            ├── view_models/
+            │     └── todo_view_model.dart
+            └── views/
+                  ├── home_screen.dart
+                  └── add_todo_screen.dart.
+```
 ## Features
 
 - **MVVM Architecture:**  
