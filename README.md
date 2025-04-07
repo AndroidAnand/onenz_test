@@ -13,11 +13,29 @@ A simple To-Do application built with Flutter that demonstrates the use of MVVM 
 
 ## Project Structure
 
- # onenz_test/ ├── melos.yaml
- # Melos configuration for the monorepo └── packages/ ├── ui_elements/ 
- # Shared UI components │ ├── pubspec.yaml │ └── lib/ │ ├── custom_button.dart │ ├── custom_bottom_button.dart │ ├── custom_text_field.dart │ └── CustomTitleText.dart └── todo_app/ 
- # Main application ├── pubspec.yaml └── lib/ ├── main.dart ├── models/ │ └── todo.dart ├── view_models/ │ └── todo_view_model.dart └── views/ ├── home_screen.dart └── add_todo_screen.dart
-
+```plaintext
+my_monorepo/
+├── melos.yaml            # Melos configuration for the monorepo
+└── packages/
+    ├── ui_elements/       # Shared UI components
+    │   ├── pubspec.yaml
+    │   └── lib/
+    │       ├── custom_button.dart
+    │       ├── custom_bottom_button.dart
+    │       ├── custom_text_field.dart
+    │       └── CustomTitleText.dart
+    └── todo_app/          # Main application
+        ├── pubspec.yaml
+        └── lib/
+            ├── main.dart
+            ├── models/
+            │     └── todo.dart
+            ├── view_models/
+            │     └── todo_view_model.dart
+            └── views/
+                  ├── home_screen.dart
+                  └── add_todo_screen.dart.
+```
 ## Features
 
 - **MVVM Architecture:**  
@@ -50,6 +68,7 @@ A simple To-Do application built with Flutter that demonstrates the use of MVVM 
     - **CustomBottomButton:** A full-width, rounded button.
     - **CustomTextField:** A text field that supports both single-line (for titles) and multi-line (for descriptions) input.
     - **CustomTitleText:** A reusable title widget for headers and app bars.
+    - **CustomTodoCard:** A reusable card view.
 
 - **Routing:**  
   The app uses go_router for navigation. The AddTodoScreen calls `context.pop()` (using go_router) to return to HomeScreen upon saving a new todo.
