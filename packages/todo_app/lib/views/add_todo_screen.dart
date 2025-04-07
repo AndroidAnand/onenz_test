@@ -19,7 +19,7 @@ class _AddTodoScreenState extends ConsumerState<AddTodoScreen> {
   Widget build(BuildContext context) {
     // Instantiate the view model.
     final viewModel = AddTodoScreenViewModel(ref);
-
+    final bottomInset = MediaQuery.of(context).viewInsets.bottom;
     return Scaffold(
       resizeToAvoidBottomInset: true,
       appBar: AppBar(
@@ -59,7 +59,12 @@ class _AddTodoScreenState extends ConsumerState<AddTodoScreen> {
         ),
       ),
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: EdgeInsets.only(
+          left: 16,
+          right: 16,
+          top: 16,
+          bottom: bottomInset > 0 ? bottomInset : 40,
+        ),
         child: CustomBottomButton(
           label: 'Save',
           onPressed: () {
