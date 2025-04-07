@@ -20,18 +20,22 @@ my_monorepo/
     ├── ui_elements/       # Shared UI components
     │   ├── pubspec.yaml
     │   └── lib/
-    │       ├── custom_button.dart
-    │       ├── custom_bottom_button.dart
+    │       ├── CustomTodoCard.dart
     │       ├── custom_text_field.dart
-    │       └── CustomTitleText.dart
+    │       ├── CustomTitleText.dart
+    │       └── CustomTodoCard.dart
     └── todo_app/          # Main application
         ├── pubspec.yaml
         └── lib/
             ├── main.dart
             ├── models/
-            │     └── todo.dart
+            │     └── Todo.dart
+            ├── navigation/
+            │     └── NavigationService.dart
             ├── view_models/
-            │     └── todo_view_model.dart
+            │     └── AddTodoScreenViewModel.dart
+            │     └── HomeScreenViewModel.dart
+            │     └── TodoViewModel.dart
             └── views/
                   ├── home_screen.dart
                   └── add_todo_screen.dart.
