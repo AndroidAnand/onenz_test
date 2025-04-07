@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:todo_app/models/todo.dart';
-import 'package:todo_app/navigation/navigation_service.dart';
-import 'package:todo_app/view_models/todo_view_model.dart';
+import 'package:todo_app/navigation/navigationService.dart';
+import 'package:todo_app/view_models/todoViewModel.dart';
 
 class HomeScreenViewModel {
   final WidgetRef ref;

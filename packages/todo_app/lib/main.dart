@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:todo_app/navigation/navigation_service.dart';
-import 'views/home_screen.dart';
-import 'views/add_todo_screen.dart';
+import 'package:todo_app/navigation/navigationService.dart';
+import 'views/homeScreen.dart';
+import 'views/addTodoScreen.dart';
 
 void main() {
   runApp(ProviderScope(child: MyApp()));
